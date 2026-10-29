@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UMKMBali - Platform digital UMKM Bali terintegrasi AI. Temukan produk lokal Bali, konsultasi bisnis dengan asisten AI, dan pelajari panduan lengkap mengembangkan usaha." />
+  <title>UMKMBali — Platform UMKM Bali Terintegrasi AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a class="brand" href="#beranda" aria-label="UMKMBali beranda">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="36" height="36"><path d="M20 3C12 3 6 10 6 19c0 6 3 11 8 14 1-4 3-7 6-9 3 2 5 5 6 9 5-3 8-8 8-14C34 10 28 3 20 3Z" fill="currentColor" opacity=".15"/><path d="M20 6c-6 0-11 5-11 13 0 4 2 8 5 10 1-3 3-5 6-6 3 1 5 3 6 6 3-2 5-6 5-10 0-8-5-13-11-13Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="15" r="3" fill="currentColor"/></svg>
+        </span>
+        <span class="brand-text">UMKM<b>Bali</b></span>
+      </a>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="#beranda" class="nav-link active">Beranda</a>
+        <a href="#direktori" class="nav-link">Direktori UMKM</a>
+        <a href="#asisten" class="nav-link">Asisten AI</a>
+        <a href="#panduan" class="nav-link">Buku Panduan</a>
+        <a href="#tentang" class="nav-link">Tentang</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="beranda">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Pulau Dewita · UMKM Digital</span>
+          <h1>Digitalisasi UMKM Bali,<br /><em>didampingi AI.</em></h1>
+          <p class="lead">Temukan produk khas Bali, konsultasikan strategi bisnis Anda dengan asisten AI cerdas, dan kuasai panduan lengkap untuk mengembangkan usaha mikro Anda.</p>
+          <div class="hero-cta">
+            <a href="#direktori" class="btn btn-primary">Jelajahi Produk</a>
+            <a href="#asisten" class="btn btn-ghost">Coba Asisten AI</a>
+          </div>
+          <div class="hero-stats" role="list">
+            <div role="listitem"><b id="statUmkm">16</b><span>Contoh produk UMKM</span></div>
+            <div role="listitem"><b id="statProduk">9</b><span>Kabupaten/Kota Bali</span></div>
+            <div role="listitem"><b>AI</b><span>Asisten bisnis DewiAI</span></div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+          <div class="hero-card">
+            <div class="hero-card-head"><span class="dot dot-on"></span> Asisten AI Aktif</div>
+            <div class="hero-card-body">
+              <p class="chat-q">"Bagaimana cara mulai jualan kopi khas Bali online?"</p>
+              <p class="chat-a"><b>AI:</b> Mulai dengan branding cerita kopi + kemasan ramah lingkungan, daftar ke marketplace, dan aktifkan media sosial visual. Saya punya langkah detailnya…</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wave" aria-hidden="true"><svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0 60c180 30 420 30 720 0s540-30 720 0v30H0Z" fill="var(--bg)"/></svg></div>
+    </section>
+
+    <section class="section" id="direktori">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Direktori</span>
+          <h2>Produk Khas Bali</h2>
+          <p>Dari kuliner hingga kerajinan tangan, jelajahi contoh produk dari berbagai daerah di Bali.</p>
+          <p class="data-note">Data direktori pada MVP ini merupakan data demonstrasi. Verifikasi nama usaha, harga, dan rating sebelum dipublikasikan sebagai direktori nyata.</p>
+        </div>
+        <div class="filters" id="filters" role="tablist" aria-label="Filter kategori">
+          <button class="chip active" data-filter="all" role="tab" aria-selected="true">Semua</button>
+          <button class="chip" data-filter="kuliner" role="tab" aria-selected="false">Kuliner</button>
+          <button class="chip" data-filter="kerajinan" role="tab" aria-selected="false">Kerajinan</button>
+          <button class="chip" data-filter="fashion" role="tab" aria-selected="false">Fashion</button>
+          <button class="chip" data-filter="pertanian" role="tab" aria-selected="false">Pertanian</button>
+          <button class="chip" data-filter="jasa" role="tab" aria-selected="false">Jasa</button>
+        </div>
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M10 4a6 6 0 1 0 3.5 10.9l4.3 4.3 1.4-1.4-4.3-4.3A6 6 0 0 0 10 4Zm0 2a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z" fill="currentColor"/></svg>
+          <input type="search" id="searchInput" placeholder="Cari produk, daerah, atau nama UMKM…" aria-label="Cari produk" />
+        </div>
+        <div class="grid" id="umkmGrid" aria-live="polite"></div>
+        <p class="empty-state" id="emptyState" hidden>Tidak ada produk yang cocok dengan pencarian Anda.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="asisten">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Asisten Cerdas</span>
+          <h2>Berbincang dengan Asisten AI</h2>
+          <p>Tanyakan apa saja seputar memulai, memasarkan, dan mengembangkan usaha UMKM Anda di Bali.</p>
+        </div>
+        <div class="assistant">
+          <aside class="assistant-side">
+            <div class="ai-badge">
+              <div class="ai-orb" aria-hidden="true"></div>
+              <div><strong>DewiAI</strong><span>Asisten UMKM Bali</span></div>
+            </div>
+            <div class="ai-status" id="aiStatus">
+              <span class="status-dot" id="aiStatusDot"></span>
+              <span id="aiStatusText">Memeriksa koneksi AI…</span>
+            </div>
+            <p class="assistant-desc">DewiAI membantu pelaku UMKM Bali dengan saran bisnis, strategi pemasaran, perizinan, dan pengembangan produk — didukung API AI yang dapat dikonfigurasi.</p>
+            <div class="quick-prompts">
+              <span class="quick-label">Coba tanyakan:</span>
+              <button class="quick" data-prompt="Bagaimana cara memulai usaha UMKM di Bali?">Cara memulai usaha</button>
+              <button class="quick" data-prompt="Strategi pemasaran online untuk produk kuliner Bali">Pemasaran online kuliner</button>
+              <button class="quick" data-prompt="Bagaimana cara mengajukan perizinan usaha?">Perizinan usaha</button>
+              <button class="quick" data-prompt="Rekomendasi produk khas Bali yang laku untuk turis">Produk laku untuk turis</button>
+              <button class="quick" data-prompt="Bagaimana cara mengelola keuangan UMKM?">Kelola keuangan</button>
+            </div>
+          </aside>
+          <div class="chat" role="log" aria-label="Obrolan dengan asisten AI" aria-live="polite">
+            <div class="chat-messages" id="chatMessages"></div>
+            <div class="typing" id="typing" hidden><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+            <form class="chat-input" id="chatForm">
+              <input type="text" id="chatInput" placeholder="Tulis pertanyaan Anda…" aria-label="Pesan untuk asisten" autocomplete="off" />
+              <button type="submit" class="btn-send" aria-label="Kirim pesan"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M3 20l18-8L3 4l4 8-4 8Z" fill="currentColor"/></svg></button>
+            </form>
+            <p class="chat-disclaimer">DewiAI memberi saran umum. Untuk keputusan penting, konsultasikan dengan ahli atau lembaga terkait.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="panduan">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Sumber Belajar</span>
+          <h2>Buku Panduan UMKM</h2>
+          <p>Panduan lengkap dan praktis untuk membangun, memasarkan, dan menumbuhkan usaha UMKM Anda di Bali.</p>
+        </div>
+        <div class="guide-layout">
+          <nav class="guide-toc" id="guideToc" aria-label="Daftar isi panduan"></nav>
+          <article class="guide-reader" id="guideReader"></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="tentang">
+      <div class="container about">
+        <div class="about-text">
+          <span class="kicker">Tentang</span>
+          <h2>Memberdayakan UMKM Bali menuju era digital</h2>
+          <p>UMKMBali hadir untuk menjembatani pelaku usaha mikro Bali dengan teknologi. Kami percaya setiap usaha lokal punya cerita yang layak didengar, dan AI dapat membuat pengetahuan bisnis dapat diakses oleh semua orang.</p>
+          <ul class="about-points">
+            <li><b>Direktori terkurasi</b> menampilkan produk khas dari sembilan kabupaten/kota di Bali.</li>
+            <li><b>Asisten AI DewiAI</b> memakai Gemini atau OpenAI melalui backend, dengan fallback lokal.</li>
+            <li><b>Buku panduan</b> menyusun langkah praktis dari nol hingga berkembang.</li>
+          </ul>
+        </div>
+        <div class="about-visual" aria-hidden="true">
+          <div class="about-tile t1"></div>
+          <div class="about-tile t2"></div>
+          <div class="about-tile t3"></div>
+          <div class="about-quote">"Ketika UMKM tumbuh, Bali pun tumbuh."</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="brand-text">UMKM<b>Bali</b></span>
+        <p>Platform digital UMKM Bali terintegrasi AI. Dibuat untuk mendukung pertumbuhan usaha lokal Pulau Dewata.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigasi</h4>
+        <a href="#beranda">Beranda</a><a href="#direktori">Direktori UMKM</a><a href="#asisten">Asisten AI</a><a href="#panduan">Buku Panduan</a>
+      </div>
+      <div class="footer-col">
+        <h4>Sumber Daya</h4>
+        <a href="#panduan">Panduan Memulai Usaha</a><a href="#asisten">Konsultasi AI</a><a href="#direktori">Katalog Produk</a>
+      </div>
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <span>halo@umkmbali.id</span><span>Denpasar, Bali</span>
+      </div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> UMKMBali. Dibuat dengan dukungan AI untuk Bali.</span></div>
+  </footer>
+
+  <button class="fab" id="fab" aria-label="Buka asisten AI">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 2 1 4 2 5l-1 4 4-1c1 1 3 2 5 2a7 7 0 0 0 7-7 7 7 0 0 0-7-7Z" fill="currentColor"/><circle cx="9" cy="9" r="1.2" fill="#fff"/><circle cx="15" cy="9" r="1.2" fill="#fff"/></svg>
+  </button>
+
+  <script src="js/data.js"></script>
+  <script src="js/ai-assistant.js"></script>
+  <script src="js/guidebook.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
